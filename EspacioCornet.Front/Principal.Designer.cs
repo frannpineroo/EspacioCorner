@@ -39,7 +39,7 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Transparent;
-			this.panel1.BackgroundImage = global::EspacioCorner.Front.Properties.Resources.Corner;
+			//this.panel1.BackgroundImage = global::EspacioCorner.Front.Properties.Resources.Corner;
 			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.panel1.Controls.Add(this.buttArte);
 			this.panel1.Controls.Add(this.buttVolley);
