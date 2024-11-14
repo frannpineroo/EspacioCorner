@@ -14,5 +14,11 @@ namespace EspacioCorner.Front
 		{
 
 		}
+
+		private void buttBasToPrin_Click(object sender, EventArgs e)
+		{
+			Principal principalForm = new Principal();
+			principalForm.Show();
+		}
 	}
 }

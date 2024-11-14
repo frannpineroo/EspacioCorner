@@ -39,7 +39,6 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Transparent;
-			//this.panel1.BackgroundImage = global::EspacioCorner.Front.Properties.Resources.Corner;
 			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.panel1.Controls.Add(this.buttArte);
 			this.panel1.Controls.Add(this.buttVolley);
@@ -55,45 +54,48 @@
 			this.buttArte.BackColor = System.Drawing.Color.Chocolate;
 			this.buttArte.Font = new System.Drawing.Font("Bodoni MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttArte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.buttArte.Location = new System.Drawing.Point(311, 267);
+			this.buttArte.Location = new System.Drawing.Point(168, 201);
 			this.buttArte.Name = "buttArte";
-			this.buttArte.Size = new System.Drawing.Size(75, 23);
+			this.buttArte.Size = new System.Drawing.Size(117, 39);
 			this.buttArte.TabIndex = 3;
 			this.buttArte.Text = "Arte";
 			this.buttArte.UseVisualStyleBackColor = false;
+			this.buttArte.Click += new System.EventHandler(this.buttArte_Click);
 			// 
 			// buttVolley
 			// 
 			this.buttVolley.BackColor = System.Drawing.Color.Chocolate;
 			this.buttVolley.Font = new System.Drawing.Font("Bodoni MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttVolley.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.buttVolley.Location = new System.Drawing.Point(230, 267);
+			this.buttVolley.Location = new System.Drawing.Point(168, 154);
 			this.buttVolley.Name = "buttVolley";
-			this.buttVolley.Size = new System.Drawing.Size(75, 23);
+			this.buttVolley.Size = new System.Drawing.Size(117, 41);
 			this.buttVolley.TabIndex = 2;
 			this.buttVolley.Text = "Volley";
 			this.buttVolley.UseVisualStyleBackColor = false;
+			this.buttVolley.Click += new System.EventHandler(this.buttVolley_Click);
 			// 
 			// buttBasquet
 			// 
 			this.buttBasquet.BackColor = System.Drawing.Color.Chocolate;
 			this.buttBasquet.Font = new System.Drawing.Font("Bodoni MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttBasquet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.buttBasquet.Location = new System.Drawing.Point(149, 267);
+			this.buttBasquet.Location = new System.Drawing.Point(168, 107);
 			this.buttBasquet.Name = "buttBasquet";
-			this.buttBasquet.Size = new System.Drawing.Size(75, 23);
+			this.buttBasquet.Size = new System.Drawing.Size(117, 41);
 			this.buttBasquet.TabIndex = 1;
 			this.buttBasquet.Text = "Basquet";
 			this.buttBasquet.UseVisualStyleBackColor = false;
+			this.buttBasquet.Click += new System.EventHandler(this.buttBasquet_Click);
 			// 
 			// buttFutbol
 			// 
 			this.buttFutbol.BackColor = System.Drawing.Color.Chocolate;
 			this.buttFutbol.Font = new System.Drawing.Font("Bodoni MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttFutbol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.buttFutbol.Location = new System.Drawing.Point(68, 267);
+			this.buttFutbol.Location = new System.Drawing.Point(168, 55);
 			this.buttFutbol.Name = "buttFutbol";
-			this.buttFutbol.Size = new System.Drawing.Size(75, 23);
+			this.buttFutbol.Size = new System.Drawing.Size(117, 46);
 			this.buttFutbol.TabIndex = 0;
 			this.buttFutbol.Text = "Futbol";
 			this.buttFutbol.UseVisualStyleBackColor = false;
