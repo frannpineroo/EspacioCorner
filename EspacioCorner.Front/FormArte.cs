@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EspacioCorner
+namespace EspacioCorner.Front
 {
-	public partial class Form1 : Form
+	public partial class FormArte : Form
 	{
-		public Form1()
+		public FormArte()
 		{
 			InitializeComponent();
 		}
