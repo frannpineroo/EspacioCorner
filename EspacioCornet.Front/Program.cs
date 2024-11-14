@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EspacioCornet.Front
+namespace EspacioCorner.Front
 {
-    internal static class Program
+	internal static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.

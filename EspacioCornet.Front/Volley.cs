@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EspacioCornet.Front
+namespace EspacioCorner.Front
 {
     public partial class Volley : Form
     {

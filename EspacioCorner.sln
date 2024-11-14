@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCornet.Front", "EspacioCornet.Front\EspacioCornet.Front.csproj", "{6D1EA85D-12A9-47A8-A2FE-D7A75B0EF9BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCorner.Front", "EspacioCornet.Front\EspacioCorner.Front.csproj", "{6D1EA85D-12A9-47A8-A2FE-D7A75B0EF9BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCorner.Negocios", "EspacioCorner.Negocios\EspacioCorner.Negocios.csproj", "{EA378986-5E84-47A6-8485-2286D1C3F9CB}"
 EndProject

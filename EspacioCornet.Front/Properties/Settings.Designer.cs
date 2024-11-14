@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EspacioCornet.Front.Properties
+namespace EspacioCorner.Front.Properties
 {
 
 

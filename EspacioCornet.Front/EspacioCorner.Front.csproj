@@ -78,6 +78,18 @@
     <Compile Include="Volley.Designer.cs">
       <DependentUpon>Volley.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Arte.resx">
+      <DependentUpon>Arte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basquet.resx">
+      <DependentUpon>Basquet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Futbol.resx">
+      <DependentUpon>Futbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +112,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Espacio.Corner.Entidades\EspacioCorner.Entidades.csproj">
+      <Project>{51fee0a8-a37c-4ae6-8aa3-3ef658d8b816}</Project>
+      <Name>Espacio.Corner.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EspacioCorner.Negocios\EspacioCorner.Negocios.csproj">
+      <Project>{ea378986-5e84-47a6-8485-2286d1c3f9cb}</Project>
+      <Name>EspacioCorner.Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EspacioCorner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corner.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
