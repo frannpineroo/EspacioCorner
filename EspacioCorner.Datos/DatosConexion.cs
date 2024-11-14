@@ -18,7 +18,7 @@ namespace EspacioCorner.Datos
             conexion = new SqlConnection(cadenaConexion);
         }
 
-        public void Abrirconexion()
+        public void AbrirConexion()
         {
             try
             {
@@ -31,7 +31,7 @@ namespace EspacioCorner.Datos
             }
         }
 
-        public void Cerrarconexion()
+        public void CerrarConexion()
         {
             try
             {

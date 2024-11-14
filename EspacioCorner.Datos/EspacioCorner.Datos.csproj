@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosAlumnos.cs" />
+    <Compile Include="DatosAsistencias.cs" />
     <Compile Include="DatosConexion.cs" />
+    <Compile Include="DatosDeporte.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
