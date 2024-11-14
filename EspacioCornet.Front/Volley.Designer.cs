@@ -1,4 +1,4 @@
-﻿namespace EspacioCornet.Front
+﻿namespace EspacioCorner.Front
 {
     partial class Volley
     {

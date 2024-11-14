@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EspacioCornet.Front
+namespace EspacioCorner.Front
 {
-    public partial class Basquet : Form
+	public partial class Basquet : Form
     {
         public Basquet()
         {
             InitializeComponent();
         }
-    }
+
+		private void Basquet_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
