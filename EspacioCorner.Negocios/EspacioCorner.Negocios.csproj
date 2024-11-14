@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalcAsistencia.cs" />
+    <Compile Include="NegAlumnos.cs" />
+    <Compile Include="NegAsistencia.cs" />
+    <Compile Include="NegDeporte.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -56,6 +58,10 @@
     <ProjectReference Include="..\Espacio.Corner.Entidades\EspacioCorner.Entidades.csproj">
       <Project>{51fee0a8-a37c-4ae6-8aa3-3ef658d8b816}</Project>
       <Name>Espacio.Corner.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EspacioCorner.Datos\EspacioCorner.Datos.csproj">
+      <Project>{1d957ecb-cc87-4c56-aaa8-979bffdc9ac0}</Project>
+      <Name>EspacioCorner.Datos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

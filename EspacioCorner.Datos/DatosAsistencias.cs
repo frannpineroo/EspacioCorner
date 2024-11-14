@@ -46,38 +46,51 @@ namespace EspacioCorner.Datos
             }
         }
 
-        public double CalcularPorcentajeAsistencia(int idAlumno, int idDeporte)
+        public int ObtenerTotalAsistencias(int idAlumno, int idDeporte)
         {
-            string queryTotal = "SELECT COUNT(*) FROM Asistencia WHERE Id_Alumno = @IdAlumno AND Id_Deporte = @IdDeporte";
-            string queryAsistio = "SELECT COUNT(*) FROM Asistencia WHERE Id_Alumno = @IdAlumno AND Id_Deporte = @IdDeporte AND Asist_Parcial = 1";
+            string query = "SELECT COUNT(*) FROM Asistencia WHERE Id_Alumno = @IdAlumno AND Id_Deporte = @IdDeporte";
+            SqlCommand cmd = new SqlCommand(query, conexion);
 
-            SqlCommand cmdTotal = new SqlCommand(queryTotal, conexion);
-            SqlCommand cmdAsistio = new SqlCommand(queryAsistio, conexion);
-
-            cmdTotal.Parameters.AddWithValue("@IdAlumno", idAlumno);
-            cmdTotal.Parameters.AddWithValue("@IdDeporte", idDeporte);
-            cmdAsistio.Parameters.AddWithValue("@IdAlumno", idAlumno);
-            cmdAsistio.Parameters.AddWithValue("@IdDeporte", idDeporte);
+            cmd.Parameters.AddWithValue("@IdAlumno", idAlumno);
+            cmd.Parameters.AddWithValue("@IdDeporte", idDeporte);
 
             try
             {
                 AbrirConexion();
-                int total = (int)cmdTotal.ExecuteScalar();
-                int asistio = (int)cmdAsistio.ExecuteScalar();
-
-                if (total == 0) return 0;
-
-                return (double)asistio / total * 100;
+                return (int)cmd.ExecuteScalar();
             }
             catch (Exception e)
             {
-                throw new Exception("Error al calcular porcentaje de asistencia", e);
+                throw new Exception("Error al obtener total de asistencias", e);
             }
             finally
             {
                 CerrarConexion();
-                cmdTotal.Dispose();
-                cmdAsistio.Dispose();
+                cmd.Dispose();
+            }
+        }
+
+        public int ObtenerAsistenciasParciales(int idAlumno, int idDeporte)
+        {
+            string query = "SELECT COUNT(*) FROM Asistencia WHERE Id_Alumno = @IdAlumno AND Id_Deporte = @IdDeporte AND Asist_Parcial = 1";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+
+            cmd.Parameters.AddWithValue("@IdAlumno", idAlumno);
+            cmd.Parameters.AddWithValue("@IdDeporte", idDeporte);
+
+            try
+            {
+                AbrirConexion();
+                return (int)cmd.ExecuteScalar();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error al obtener asistencias parciales", e);
+            }
+            finally
+            {
+                CerrarConexion();
+                cmd.Dispose();
             }
         }
     }
