@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>1d957ecb-cc87-4c56-aaa8-979bffdc9ac0</ProjectGuid>
+    <ProjectGuid>51fee0a8-a37c-4ae6-8aa3-3ef658d8b816</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>EspacioCorner.Datos</RootNamespace>
-    <AssemblyName>EspacioCorner.Datos</AssemblyName>
+    <RootNamespace>Espacio.Corner.Entidades</RootNamespace>
+    <AssemblyName>Espacio.Corner.Entidades</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
