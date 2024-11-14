@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCornet.Front", "Espa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCorner.Negocios", "EspacioCorner.Negocios\EspacioCorner.Negocios.csproj", "{EA378986-5E84-47A6-8485-2286D1C3F9CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Espacio.Corner.Entidades", "Espacio.Corner.Entidades\Espacio.Corner.Entidades.csproj", "{51FEE0A8-A37C-4AE6-8AA3-3EF658D8B816}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCorner.Entidades", "Espacio.Corner.Entidades\EspacioCorner.Entidades.csproj", "{51FEE0A8-A37C-4AE6-8AA3-3EF658D8B816}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspacioCorner.Datos", "EspacioCorner.Datos\EspacioCorner.Datos.csproj", "{1D957ECB-CC87-4C56-AAA8-979BFFDC9AC0}"
 EndProject
