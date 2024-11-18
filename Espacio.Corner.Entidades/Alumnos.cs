@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EspacioCorner.Entidades
 {
-    public class Alumnos
+	public class Alumnos
     {
         #region atributos 
         private int Id_Alumno { get; set; }

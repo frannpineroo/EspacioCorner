@@ -30,7 +30,6 @@
 		{
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.buttNewFutbol = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.buttFutToPrin = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -51,7 +50,6 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.buttNewFutbol);
 			this.tabPage1.Controls.Add(this.dataGridView1);
 			this.tabPage1.Controls.Add(this.buttFutToPrin);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -61,16 +59,6 @@
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
-			// buttNewFutbol
-			// 
-			this.buttNewFutbol.Location = new System.Drawing.Point(610, 74);
-			this.buttNewFutbol.Name = "buttNewFutbol";
-			this.buttNewFutbol.Size = new System.Drawing.Size(104, 37);
-			this.buttNewFutbol.TabIndex = 3;
-			this.buttNewFutbol.Text = "Agregar Nuevo Alumno";
-			this.buttNewFutbol.UseVisualStyleBackColor = true;
-			this.buttNewFutbol.Click += new System.EventHandler(this.buttNewFutbol_Click);
 			// 
 			// dataGridView1
 			// 
@@ -123,6 +111,5 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button buttFutToPrin;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.Button buttNewFutbol;
 	}
 }

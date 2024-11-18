@@ -1,9 +1,13 @@
-﻿using System.Windows.Forms;
+﻿using EspacioCorner.Entidades;
+using EspacioCornet.Front;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace EspacioCorner.Front
 {
 	public partial class Principal : Form
     {
+		private List<Alumno> alumnos = new List<Alumno>();
 		public Principal()
         {
             InitializeComponent();
@@ -53,5 +57,15 @@ namespace EspacioCorner.Front
 			}
 			
 		}
+
+		private void buttAniadirAl_Click(object sender, System.EventArgs e)
+		{
+			using (NewAlumnoForm newAlumnoForm = new NewAlumnoForm())
+			{
+				this.Hide();
+				newAlumnoForm.ShowDialog();
+			}
+		}
+
 	}
 }

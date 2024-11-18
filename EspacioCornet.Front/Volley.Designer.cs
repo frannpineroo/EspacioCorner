@@ -33,7 +33,6 @@
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.buttVolToPrin = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.buttNewVolley = new System.Windows.Forms.Button();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -51,7 +50,6 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.buttNewVolley);
 			this.tabPage1.Controls.Add(this.dataGridView1);
 			this.tabPage1.Controls.Add(this.buttVolToPrin);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -90,15 +88,6 @@
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// buttNewVolley
-			// 
-			this.buttNewVolley.Location = new System.Drawing.Point(638, 93);
-			this.buttNewVolley.Name = "buttNewVolley";
-			this.buttNewVolley.Size = new System.Drawing.Size(104, 37);
-			this.buttNewVolley.TabIndex = 2;
-			this.buttNewVolley.Text = "Agregar Nuevo Alumno";
-			this.buttNewVolley.UseVisualStyleBackColor = true;
-			// 
 			// Volley
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +110,5 @@
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button buttVolToPrin;
-		private System.Windows.Forms.Button buttNewVolley;
 	}
 }
