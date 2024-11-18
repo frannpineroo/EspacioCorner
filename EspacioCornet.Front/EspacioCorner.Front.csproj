@@ -64,6 +64,12 @@
     <Compile Include="Futbol.Designer.cs">
       <DependentUpon>Futbol.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewAlumnoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAlumnoForm.Designer.cs">
+      <DependentUpon>NewAlumnoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Futbol.resx">
       <DependentUpon>Futbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAlumnoForm.resx">
+      <DependentUpon>NewAlumnoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

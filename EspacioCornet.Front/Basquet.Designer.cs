@@ -30,9 +30,10 @@
 		{
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.buttBasToPrin = new System.Windows.Forms.Button();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.buttNewBasquet = new System.Windows.Forms.Button();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,6 +51,7 @@
 			// 
 			// tabPage1
 			// 
+			this.tabPage1.Controls.Add(this.buttNewBasquet);
 			this.tabPage1.Controls.Add(this.buttBasToPrin);
 			this.tabPage1.Controls.Add(this.dataGridView1);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -60,24 +62,6 @@
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
-			// tabPage2
-			// 
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(192, 74);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "tabPage2";
-			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(20, 16);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(539, 299);
-			this.dataGridView1.TabIndex = 0;
-			// 
 			// buttBasToPrin
 			// 
 			this.buttBasToPrin.Location = new System.Drawing.Point(670, 16);
@@ -87,6 +71,33 @@
 			this.buttBasToPrin.Text = "Volver";
 			this.buttBasToPrin.UseVisualStyleBackColor = true;
 			this.buttBasToPrin.Click += new System.EventHandler(this.buttBasToPrin_Click);
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Location = new System.Drawing.Point(20, 16);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(539, 299);
+			this.dataGridView1.TabIndex = 0;
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.Location = new System.Drawing.Point(4, 22);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(767, 399);
+			this.tabPage2.TabIndex = 1;
+			this.tabPage2.Text = "tabPage2";
+			this.tabPage2.UseVisualStyleBackColor = true;
+			// 
+			// buttNewBasquet
+			// 
+			this.buttNewBasquet.Location = new System.Drawing.Point(641, 77);
+			this.buttNewBasquet.Name = "buttNewBasquet";
+			this.buttNewBasquet.Size = new System.Drawing.Size(104, 37);
+			this.buttNewBasquet.TabIndex = 3;
+			this.buttNewBasquet.Text = "Agregar Nuevo Alumno";
+			this.buttNewBasquet.UseVisualStyleBackColor = true;
 			// 
 			// Basquet
 			// 
@@ -111,5 +122,6 @@
 		private System.Windows.Forms.Button buttBasToPrin;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.TabPage tabPage2;
+		private System.Windows.Forms.Button buttNewBasquet;
 	}
 }

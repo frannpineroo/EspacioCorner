@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EspacioCorner.Front
 {
-    public partial class Volley : Form
+	public partial class Volley : Form
     {
         public Volley()
         {
@@ -19,8 +12,12 @@ namespace EspacioCorner.Front
 
 		private void buttVolToPrin_Click(object sender, EventArgs e)
 		{
-			Principal principalForm = new Principal();
-			principalForm.Show();
+			using (Principal principalForm = new Principal())
+			{
+				this.Hide();
+				principalForm.ShowDialog();
+			}
+			
 		}
 	}
 }

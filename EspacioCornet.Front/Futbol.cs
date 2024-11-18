@@ -5,10 +5,10 @@ namespace EspacioCorner.Front
 {
 	public partial class Futbol : Form
     {
-        public Futbol()
-        {
-            InitializeComponent();
-        }
+		public Futbol()
+		{
+			InitializeComponent();
+		}
 
 		private void Futbol_Load(object sender, EventArgs e)
 		{
@@ -17,8 +17,17 @@ namespace EspacioCorner.Front
 
 		private void buttFutToPrin_Click(object sender, EventArgs e)
 		{
-			Principal principalForm = new Principal();
-			principalForm.Show();
+			using (Principal principalForm = new Principal())
+			{
+				this.Hide();
+				principalForm.ShowDialog();
+			}
+			
+		}
+
+		private void buttNewFutbol_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

@@ -4,15 +4,19 @@ namespace EspacioCorner.Front
 {
 	public partial class Principal : Form
     {
-        public Principal()
+		public Principal()
         {
             InitializeComponent();
         }
 
 		private void buttFutbol_Click(object sender, System.EventArgs e)
 		{
-			Futbol futbolForm = new Futbol();
-			futbolForm.Show();
+			using (Futbol futbolForm = new Futbol())
+			{
+				this.Hide();
+				futbolForm.ShowDialog();
+			}
+			
 		}
 
 		private void pictureBox1_Click(object sender, System.EventArgs e)
@@ -22,20 +26,32 @@ namespace EspacioCorner.Front
 
 		private void buttArte_Click(object sender, System.EventArgs e)
 		{
-			Arte arteForm = new Arte();
-			arteForm.Show();	
+			using (Arte arteForm = new Arte())
+			{
+				this.Hide();
+				arteForm.ShowDialog();
+			}
+				
 		}
 
 		private void buttBasquet_Click(object sender, System.EventArgs e)
 		{
-			Basquet basquetForm = new Basquet();
-			basquetForm.Show();
+			using (Basquet basquetForm = new Basquet())
+			{
+				this.Hide();
+				basquetForm.ShowDialog();
+			}
+			
 		}
 
 		private void buttVolley_Click(object sender, System.EventArgs e)
 		{
-			Volley volleyForm = new Volley();
-			volleyForm.Show();
+			using (Volley volleyForm = new Volley())
+			{
+				this.Hide();
+				volleyForm.ShowDialog();
+			}
+			
 		}
 	}
 }
