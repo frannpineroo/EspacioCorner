@@ -33,7 +33,6 @@
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.buttArtToPrin = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.buttNewArte = new System.Windows.Forms.Button();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -51,7 +50,6 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.buttNewArte);
 			this.tabPage1.Controls.Add(this.dataGridView1);
 			this.tabPage1.Controls.Add(this.buttArtToPrin);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -90,15 +88,6 @@
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// buttNewArte
-			// 
-			this.buttNewArte.Location = new System.Drawing.Point(636, 88);
-			this.buttNewArte.Name = "buttNewArte";
-			this.buttNewArte.Size = new System.Drawing.Size(104, 37);
-			this.buttNewArte.TabIndex = 3;
-			this.buttNewArte.Text = "Agregar Nuevo Alumno";
-			this.buttNewArte.UseVisualStyleBackColor = true;
-			// 
 			// Arte
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +111,5 @@
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.Button buttArtToPrin;
 		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.Button buttNewArte;
 	}
 }

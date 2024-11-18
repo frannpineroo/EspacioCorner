@@ -33,6 +33,7 @@
 			this.buttVolley = new System.Windows.Forms.Button();
 			this.buttBasquet = new System.Windows.Forms.Button();
 			this.buttFutbol = new System.Windows.Forms.Button();
+			this.buttAniadirAl = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -40,6 +41,7 @@
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Transparent;
 			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.panel1.Controls.Add(this.buttAniadirAl);
 			this.panel1.Controls.Add(this.buttArte);
 			this.panel1.Controls.Add(this.buttVolley);
 			this.panel1.Controls.Add(this.buttBasquet);
@@ -101,6 +103,19 @@
 			this.buttFutbol.UseVisualStyleBackColor = false;
 			this.buttFutbol.Click += new System.EventHandler(this.buttFutbol_Click);
 			// 
+			// buttAniadirAl
+			// 
+			this.buttAniadirAl.BackColor = System.Drawing.Color.Chocolate;
+			this.buttAniadirAl.Font = new System.Drawing.Font("Bodoni MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.buttAniadirAl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.buttAniadirAl.Location = new System.Drawing.Point(356, 12);
+			this.buttAniadirAl.Name = "buttAniadirAl";
+			this.buttAniadirAl.Size = new System.Drawing.Size(91, 46);
+			this.buttAniadirAl.TabIndex = 3;
+			this.buttAniadirAl.Text = "Añadir Alumno";
+			this.buttAniadirAl.UseVisualStyleBackColor = false;
+			this.buttAniadirAl.Click += new System.EventHandler(this.buttAniadirAl_Click);
+			// 
 			// Principal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,5 +136,6 @@
 		private System.Windows.Forms.Button buttBasquet;
 		private System.Windows.Forms.Button buttFutbol;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button buttAniadirAl;
 	}
 }
