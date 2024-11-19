@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EspacioCorner.Negocios;
+using System;
 using System.Windows.Forms;
 
 namespace EspacioCorner.Front
@@ -12,7 +13,8 @@ namespace EspacioCorner.Front
 
 		private void Futbol_Load(object sender, EventArgs e)
 		{
-
+			dgvAlumFutbol.DataSource = null;
+			dgvAlumFutbol.DataSource = DatosEscuela.AlumnosFutbol;
 		}
 
 		private void buttFutToPrin_Click(object sender, EventArgs e)
@@ -26,6 +28,11 @@ namespace EspacioCorner.Front
 		}
 
 		private void buttNewFutbol_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void tabPage1_Click(object sender, EventArgs e)
 		{
 
 		}

@@ -30,12 +30,12 @@
         {
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvAlumVolley = new System.Windows.Forms.DataGridView();
 			this.buttVolToPrin = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvAlumVolley)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -50,7 +50,7 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.dataGridView1);
+			this.tabPage1.Controls.Add(this.dgvAlumVolley);
 			this.tabPage1.Controls.Add(this.buttVolToPrin);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
@@ -60,13 +60,13 @@
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
-			// dataGridView1
+			// dgvAlumVolley
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(16, 18);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(599, 333);
-			this.dataGridView1.TabIndex = 1;
+			this.dgvAlumVolley.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvAlumVolley.Location = new System.Drawing.Point(16, 18);
+			this.dgvAlumVolley.Name = "dgvAlumVolley";
+			this.dgvAlumVolley.Size = new System.Drawing.Size(599, 333);
+			this.dgvAlumVolley.TabIndex = 1;
 			// 
 			// buttVolToPrin
 			// 
@@ -98,7 +98,7 @@
 			this.Text = "Volley";
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvAlumVolley)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -108,7 +108,7 @@
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvAlumVolley;
 		private System.Windows.Forms.Button buttVolToPrin;
 	}
 }

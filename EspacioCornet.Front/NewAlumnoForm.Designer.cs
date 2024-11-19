@@ -39,11 +39,14 @@
 			this.lblNumT = new System.Windows.Forms.Label();
 			this.lblNumAlumno = new System.Windows.Forms.Label();
 			this.lblFMedica = new System.Windows.Forms.Label();
-			this.txtFMedica = new System.Windows.Forms.TextBox();
 			this.txtNumAlum = new System.Windows.Forms.TextBox();
 			this.lblDNIAlum = new System.Windows.Forms.Label();
 			this.txtDNIAlum = new System.Windows.Forms.TextBox();
 			this.txtNumT = new System.Windows.Forms.TextBox();
+			this.cmbEstAlumno = new System.Windows.Forms.ComboBox();
+			this.lblEstAlumno = new System.Windows.Forms.Label();
+			this.clbDeportes = new System.Windows.Forms.CheckedListBox();
+			this.cboxFichaMed = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// buttAniadirAlum
@@ -152,14 +155,6 @@
 			this.lblFMedica.TabIndex = 12;
 			this.lblFMedica.Text = "Ficha Medica";
 			// 
-			// txtFMedica
-			// 
-			this.txtFMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFMedica.Location = new System.Drawing.Point(17, 265);
-			this.txtFMedica.Name = "txtFMedica";
-			this.txtFMedica.Size = new System.Drawing.Size(202, 29);
-			this.txtFMedica.TabIndex = 13;
-			// 
 			// txtNumAlum
 			// 
 			this.txtNumAlum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,16 +189,66 @@
 			this.txtNumT.Size = new System.Drawing.Size(202, 29);
 			this.txtNumT.TabIndex = 17;
 			// 
+			// cmbEstAlumno
+			// 
+			this.cmbEstAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbEstAlumno.FormattingEnabled = true;
+			this.cmbEstAlumno.Location = new System.Drawing.Point(264, 265);
+			this.cmbEstAlumno.Name = "cmbEstAlumno";
+			this.cmbEstAlumno.Size = new System.Drawing.Size(202, 28);
+			this.cmbEstAlumno.TabIndex = 18;
+			this.cmbEstAlumno.SelectedIndexChanged += new System.EventHandler(this.cmbEstAlumno_SelectedIndexChanged);
+			// 
+			// lblEstAlumno
+			// 
+			this.lblEstAlumno.AutoSize = true;
+			this.lblEstAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblEstAlumno.Location = new System.Drawing.Point(259, 237);
+			this.lblEstAlumno.Name = "lblEstAlumno";
+			this.lblEstAlumno.Size = new System.Drawing.Size(192, 25);
+			this.lblEstAlumno.TabIndex = 19;
+			this.lblEstAlumno.Text = "Estado del Alumno";
+			// 
+			// clbDeportes
+			// 
+			this.clbDeportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.clbDeportes.FormattingEnabled = true;
+			this.clbDeportes.Items.AddRange(new object[] {
+            "Fútbol",
+            "Básquet",
+            "Volley",
+            "Arte"});
+			this.clbDeportes.Location = new System.Drawing.Point(516, 117);
+			this.clbDeportes.Name = "clbDeportes";
+			this.clbDeportes.Size = new System.Drawing.Size(142, 100);
+			this.clbDeportes.TabIndex = 20;
+			this.clbDeportes.ThreeDCheckBoxes = true;
+			this.clbDeportes.SelectedIndexChanged += new System.EventHandler(this.clbDeportes_SelectedIndexChanged);
+			// 
+			// cboxFichaMed
+			// 
+			this.cboxFichaMed.AutoSize = true;
+			this.cboxFichaMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboxFichaMed.Location = new System.Drawing.Point(48, 265);
+			this.cboxFichaMed.Name = "cboxFichaMed";
+			this.cboxFichaMed.Size = new System.Drawing.Size(105, 28);
+			this.cboxFichaMed.TabIndex = 21;
+			this.cboxFichaMed.Text = "Marcar si";
+			this.cboxFichaMed.UseVisualStyleBackColor = true;
+			// 
 			// NewAlumnoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.cboxFichaMed);
+			this.Controls.Add(this.clbDeportes);
+			this.Controls.Add(this.lblEstAlumno);
+			this.Controls.Add(this.cmbEstAlumno);
 			this.Controls.Add(this.txtNumT);
 			this.Controls.Add(this.txtDNIAlum);
 			this.Controls.Add(this.lblDNIAlum);
 			this.Controls.Add(this.txtNumAlum);
-			this.Controls.Add(this.txtFMedica);
 			this.Controls.Add(this.lblFMedica);
 			this.Controls.Add(this.lblNumAlumno);
 			this.Controls.Add(this.lblNumT);
@@ -217,6 +262,7 @@
 			this.Controls.Add(this.buttAniadirAlum);
 			this.Name = "NewAlumnoForm";
 			this.Text = "NewAlumnoForm";
+			this.Load += new System.EventHandler(this.NewAlumnoForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -235,10 +281,13 @@
 		private System.Windows.Forms.Label lblNumT;
 		private System.Windows.Forms.Label lblNumAlumno;
 		private System.Windows.Forms.Label lblFMedica;
-		private System.Windows.Forms.TextBox txtFMedica;
 		private System.Windows.Forms.TextBox txtNumAlum;
 		private System.Windows.Forms.Label lblDNIAlum;
 		private System.Windows.Forms.TextBox txtDNIAlum;
 		private System.Windows.Forms.TextBox txtNumT;
+		private System.Windows.Forms.ComboBox cmbEstAlumno;
+		private System.Windows.Forms.Label lblEstAlumno;
+		private System.Windows.Forms.CheckedListBox clbDeportes;
+		private System.Windows.Forms.CheckBox cboxFichaMed;
 	}
 }

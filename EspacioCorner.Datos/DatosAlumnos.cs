@@ -6,7 +6,7 @@ namespace EspacioCorner.Datos
 {
 	public class DatosAlumnos : DatosConexionDB
 	{
-		public int AgregarAlumno(string nombreApellido, int dni, string numPersonal, string numPadreTutor, string numMadreTutor, DateTime fechaCumple, bool fichaMedica, EstadoAlumno estado)
+		public int AgregarAlumno(string nombreApellido, int dni, string numPersonal, string numPadreTutor, string numMadreTutor, DateTime fechaCumple, bool fichaMedica, EstadoAlumno estadoAlumno)
 		{
 			string query = "INSERT INTO Alumnos (Nombre_Apellido, DNI, NumPersonal, NumPadre_Tutor, NumMadre_Tutor, FechaCumple, FichaMedica, Estado) VALUES (@NombreApellido, @DNI, @NumPersonal, @NumPadreTutor, @NumMadreTutor, @FechaCumple, @FichaMedica, @Estado)";
 			SqlCommand cmd = new SqlCommand(query, conexion);
@@ -18,7 +18,7 @@ namespace EspacioCorner.Datos
 			cmd.Parameters.AddWithValue("@NumMadreTutor", numMadreTutor);
 			cmd.Parameters.AddWithValue("@FechaCumple", fechaCumple);
 			cmd.Parameters.AddWithValue("@FichaMedica", fichaMedica ? "SI" : "NO");
-			cmd.Parameters.AddWithValue("@Estado", estado.ToString());
+			cmd.Parameters.AddWithValue("@Estado", estadoAlumno.ToString());
 
 			try
 			{

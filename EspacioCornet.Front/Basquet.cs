@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EspacioCorner.Negocios;
+using System;
 using System.Windows.Forms;
 
 namespace EspacioCorner.Front
@@ -12,7 +13,8 @@ namespace EspacioCorner.Front
 
 		private void Basquet_Load(object sender, EventArgs e)
 		{
-
+			dgvAlumBasquet.DataSource = null;
+			dgvAlumBasquet.DataSource = DatosEscuela.AlumnosBasquet;
 		}
 
 		private void buttBasToPrin_Click(object sender, EventArgs e)

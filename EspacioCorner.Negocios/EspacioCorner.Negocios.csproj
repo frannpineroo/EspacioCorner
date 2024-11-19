@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosEscuela.cs" />
     <Compile Include="NegAlumnos.cs" />
     <Compile Include="NegAsistencia.cs" />
     <Compile Include="NegDeporte.cs" />

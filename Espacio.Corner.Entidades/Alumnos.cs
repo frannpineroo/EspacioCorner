@@ -19,7 +19,7 @@ namespace EspacioCorner.Entidades
 		private string NumMadre_Tutor { get; set; }
 		private DateTime FechaCumple { get; set; }
 		private bool FichaMedica { get; set; } // True para "SI", False para "NO"
-		private EstadoAlumno Estado { get; set; }
+		private EstadoAlumno EstadoAlumno { get; set; }
 		#endregion
 
 		#region Constructor
@@ -33,7 +33,7 @@ namespace EspacioCorner.Entidades
 			NumMadre_Tutor = string.Empty;
 			FechaCumple = DateTime.MinValue;
 			FichaMedica = false;
-			Estado = EstadoAlumno.Activo;
+			EstadoAlumno = EstadoAlumno.Activo;
 		}
 
 		public Alumno(int id_Alumno, string nombre_Apellido, int dni, string numPersonal, string numPadre_Tutor, string numMadre_Tutor, DateTime fechaCumple, bool fichaMedica, EstadoAlumno estado)
@@ -46,7 +46,7 @@ namespace EspacioCorner.Entidades
 			NumMadre_Tutor = numMadre_Tutor;
 			FechaCumple = fechaCumple;
 			FichaMedica = fichaMedica;
-			Estado = estado;
+			EstadoAlumno = estado;
 		}
 		#endregion
 
@@ -93,8 +93,8 @@ namespace EspacioCorner.Entidades
 		}
 		public EstadoAlumno estado
 		{
-			get { return Estado; }
-			set { Estado = value; }
+			get { return EstadoAlumno; }
+			set { EstadoAlumno = value; }
 		}
 		#endregion
 	}
