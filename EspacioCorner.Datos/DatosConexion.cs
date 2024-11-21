@@ -11,7 +11,8 @@ namespace EspacioCorner.Datos
     public class DatosConexionDB
     {
         public SqlConnection conexion;
-        public string cadenaConexion = @"Data Source=DESKTOP-LF6ERKD\SQLEXPRESS;Initial Catalog=Espacio_Corner;Integrated Security=True;Connect Timeout=30;TrustServerCertificate=true;Encrypt=True";
+        public string cadenaConexion = @"Data Source=LEO\SQLEXPRESS;Initial Catalog=Espacio_Corner;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+
 
         public DatosConexionDB()
         {
