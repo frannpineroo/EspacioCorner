@@ -67,6 +67,7 @@
 			this.dgvAlumArte.Name = "dgvAlumArte";
 			this.dgvAlumArte.Size = new System.Drawing.Size(566, 325);
 			this.dgvAlumArte.TabIndex = 1;
+			this.dgvAlumArte.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumArte_CellContentClick);
 			// 
 			// buttArtToPrin
 			// 
