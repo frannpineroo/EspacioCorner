@@ -1,5 +1,5 @@
 ﻿using EspacioCorner.Entidades;
-using EspacioCornet.Front;
+using EspacioCorner.Front;
 using System.Collections.Generic;
 using System.Windows.Forms;
 

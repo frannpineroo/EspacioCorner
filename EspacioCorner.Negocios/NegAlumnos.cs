@@ -9,15 +9,21 @@ namespace EspacioCorner.Negocios
     {
         private DatosAlumnos datosAlumnos = new DatosAlumnos();
 
-        public (int, string) AgregarAlumno(string nombreApellido, int dni, string numPersonal, string numPadreTutor, string numMadreTutor, DateTime fechaCumple, bool fichaMedica, EstadoAlumno estado)
+        public (int, string) AgregarAlumno(string nombreApellido, int dni, string numPersonal, string numPadreTutor, string numMadreTutor, DateTime fechaCumple, bool fichaMedica, EstadoAlumno estado, List<int> deportes)
         {
             string advertencia = ValidarFechaCumple(fechaCumple);
 
             try
             {
-                int resultado = datosAlumnos.AgregarAlumno(nombreApellido, dni, numPersonal, numPadreTutor, numMadreTutor, fechaCumple, fichaMedica, estado);
-                Console.WriteLine("Resultado de la inserción: " + resultado);
-                return (resultado, advertencia);
+                int idAlumno = datosAlumnos.AgregarAlumno(nombreApellido, dni, numPersonal, numPadreTutor, numMadreTutor, fechaCumple, fichaMedica, estado);
+
+                // Agregar registros en Asistencia para los deportes seleccionados
+                foreach (int idDeporte in deportes)
+                {
+                    datosAlumnos.AgregarAsistencia(idAlumno, idDeporte);
+                }
+
+                return (idAlumno, advertencia);
             }
             catch (Exception e)
             {
@@ -28,17 +34,14 @@ namespace EspacioCorner.Negocios
 
         public string ValidarFechaCumple(DateTime fechaCumple)
         {
-            // Validar que la fecha no sea superior a la fecha actual
             if (fechaCumple > DateTime.Now)
             {
                 return "La fecha de cumpleaños no puede ser superior a la fecha actual.";
             }
 
-            // Calcular la edad exacta
             int edad = DateTime.Now.Year - fechaCumple.Year;
             if (fechaCumple.Date > DateTime.Now.AddYears(-edad)) edad--;
 
-            // Validar la edad
             if (edad > 18)
             {
                 return "Advertencia: El alumno tiene más de 18 años.";
@@ -57,6 +60,11 @@ namespace EspacioCorner.Negocios
             {
                 throw new Exception("Error en la capa de negocios al obtener alumnos por deporte", e);
             }
+        }
+
+        public int ObtenerIdDeportePorNombre(string nombreDeporte)
+        {
+            return datosAlumnos.ObtenerIdDeportePorNombre(nombreDeporte);
         }
     }
 }

@@ -1,33 +1,33 @@
-﻿namespace EspacioCornet.Front
+﻿namespace EspacioCorner.Front
 {
-	partial class NewAlumnoForm
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class NewAlumnoForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.buttAniadirAlum = new System.Windows.Forms.Button();
             this.lblNewAlumno = new System.Windows.Forms.Label();
             this.txtNombreAl = new System.Windows.Forms.TextBox();
@@ -47,6 +47,7 @@
             this.cboxFichaMed = new System.Windows.Forms.CheckBox();
             this.lblFechaNac = new System.Windows.Forms.Label();
             this.calFechaNac = new System.Windows.Forms.MonthCalendar();
+            this.buttCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttAniadirAlum
@@ -229,11 +230,23 @@
             this.calFechaNac.Name = "calFechaNac";
             this.calFechaNac.TabIndex = 25;
             // 
+            // buttCancelar
+            // 
+            this.buttCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttCancelar.Location = new System.Drawing.Point(628, 57);
+            this.buttCancelar.Name = "buttCancelar";
+            this.buttCancelar.Size = new System.Drawing.Size(107, 32);
+            this.buttCancelar.TabIndex = 26;
+            this.buttCancelar.Text = "Cancelar";
+            this.buttCancelar.UseVisualStyleBackColor = true;
+            this.buttCancelar.Click += new System.EventHandler(this.buttCancelar_Click);
+            // 
             // NewAlumnoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttCancelar);
             this.Controls.Add(this.calFechaNac);
             this.Controls.Add(this.lblFechaNac);
             this.Controls.Add(this.cboxFichaMed);
@@ -259,28 +272,29 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.Button buttAniadirAlum;
-		private System.Windows.Forms.Label lblNewAlumno;
-		private System.Windows.Forms.TextBox txtNombreAl;
-		private System.Windows.Forms.Label lblNombreAlum;
-		private System.Windows.Forms.Label lblNumP;
-		private System.Windows.Forms.Label lblNumM;
-		private System.Windows.Forms.TextBox txtNumM;
-		private System.Windows.Forms.TextBox txtNumP;
-		private System.Windows.Forms.Label lblNumAlumno;
-		private System.Windows.Forms.Label lblFMedica;
-		private System.Windows.Forms.TextBox txtNumAlum;
-		private System.Windows.Forms.Label lblDNIAlum;
-		private System.Windows.Forms.TextBox txtDNIAlum;
-		private System.Windows.Forms.ComboBox cmbEstAlumno;
-		private System.Windows.Forms.Label lblEstAlumno;
-		private System.Windows.Forms.CheckedListBox clbDeportes;
-		private System.Windows.Forms.CheckBox cboxFichaMed;
+        private System.Windows.Forms.Button buttAniadirAlum;
+        private System.Windows.Forms.Label lblNewAlumno;
+        private System.Windows.Forms.TextBox txtNombreAl;
+        private System.Windows.Forms.Label lblNombreAlum;
+        private System.Windows.Forms.Label lblNumP;
+        private System.Windows.Forms.Label lblNumM;
+        private System.Windows.Forms.TextBox txtNumM;
+        private System.Windows.Forms.TextBox txtNumP;
+        private System.Windows.Forms.Label lblNumAlumno;
+        private System.Windows.Forms.Label lblFMedica;
+        private System.Windows.Forms.TextBox txtNumAlum;
+        private System.Windows.Forms.Label lblDNIAlum;
+        private System.Windows.Forms.TextBox txtDNIAlum;
+        private System.Windows.Forms.ComboBox cmbEstAlumno;
+        private System.Windows.Forms.Label lblEstAlumno;
+        private System.Windows.Forms.CheckedListBox clbDeportes;
+        private System.Windows.Forms.CheckBox cboxFichaMed;
         private System.Windows.Forms.Label lblFechaNac;
         private System.Windows.Forms.MonthCalendar calFechaNac;
+        private System.Windows.Forms.Button buttCancelar;
     }
 }

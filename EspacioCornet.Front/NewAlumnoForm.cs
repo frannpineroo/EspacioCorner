@@ -1,24 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using EspacioCorner.Entidades;
 using EspacioCorner.Front;
 using EspacioCorner.Negocios;
 
-namespace EspacioCornet.Front
+namespace EspacioCorner.Front
 {
     public partial class NewAlumnoForm : Form
     {
         private string deporte;
-        private NegAlumnos negAlumnos = new NegAlumnos(); // Crear una instancia de NegAlumnos
+        private NegAlumnos negAlumnos = new NegAlumnos();
 
         public NewAlumnoForm(string deporteSeleccionado = null)
         {
             InitializeComponent();
             deporte = deporteSeleccionado;
-            // Cargar opciones del estado desde la enumeración
+
             cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
-            // Preseleccionar el deporte recibido
             clbDeportes.Items.AddRange(new string[] { "Fútbol", "Básquet", "Volley", "Arte" });
 
             if (!string.IsNullOrEmpty(deporteSeleccionado))
@@ -46,7 +46,6 @@ namespace EspacioCornet.Front
 
         private void buttAniadirAlum_Click(object sender, EventArgs e)
         {
-            // Valida la entrada de datos
             if (string.IsNullOrWhiteSpace(txtNombreAl.Text))
             {
                 MessageBox.Show("El nombre no puede estar vacío.");
@@ -65,7 +64,6 @@ namespace EspacioCornet.Front
                 return;
             }
 
-            // Valida que se ha seleccionado una fecha de nacimiento
             DateTime fechaCumple = calFechaNac.SelectionStart;
             if (fechaCumple == null || fechaCumple == DateTime.MinValue)
             {
@@ -73,7 +71,6 @@ namespace EspacioCornet.Front
                 return;
             }
 
-            // Valida fecha de nacimiento de acuerdo a negAlumno
             string validacionFecha = negAlumnos.ValidarFechaCumple(fechaCumple);
             if (!string.IsNullOrEmpty(validacionFecha))
             {
@@ -89,10 +86,18 @@ namespace EspacioCornet.Front
                 numMadre_Tutor = txtNumM.Text,
                 fichaMedica = cboxFichaMed.Checked,
                 estado = (EstadoAlumno)cmbEstAlumno.SelectedItem,
-                fechaCumple = fechaCumple 
+                fechaCumple = fechaCumple
             };
 
-            var resultado = negAlumnos.AgregarAlumno(nuevoAlumno.nombre_Apellido, nuevoAlumno.dNI, nuevoAlumno.numPersonal, nuevoAlumno.numPadre_Tutor, nuevoAlumno.numMadre_Tutor, nuevoAlumno.fechaCumple, nuevoAlumno.fichaMedica, nuevoAlumno.estado);
+            // Obtener los Ids de los deportes seleccionados
+            List<int> deportesSeleccionados = new List<int>();
+            foreach (string deporte in clbDeportes.CheckedItems)
+            {
+                int idDeporte = negAlumnos.ObtenerIdDeportePorNombre(deporte);
+                deportesSeleccionados.Add(idDeporte);
+            }
+
+            var resultado = negAlumnos.AgregarAlumno(nuevoAlumno.nombre_Apellido, nuevoAlumno.dNI, nuevoAlumno.numPersonal, nuevoAlumno.numPadre_Tutor, nuevoAlumno.numMadre_Tutor, nuevoAlumno.fechaCumple, nuevoAlumno.fichaMedica, nuevoAlumno.estado, deportesSeleccionados);
 
             if (resultado.Item1 > 0)
             {
@@ -108,18 +113,28 @@ namespace EspacioCornet.Front
 
             this.Close();
         }
-    }
-		//private void cmbEstAlumno_SelectedIndexChanged(object sender, EventArgs e)
-		//{
-		//	cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
-		//}
 
-		//private void buttCancelar_Click(object sender, EventArgs e)
-		//{
-		//	using (Principal principalForm = new Principal())
-		//	{
-		//		this.Hide();
-		//		principalForm.ShowDialog();
-		//	}
-		//}
+        private void buttCancelar_Click(object sender, EventArgs e)
+        {
+            using (Principal principalForm = new Principal())
+            {
+                this.Hide();
+                principalForm.ShowDialog();
+            }
+        }
+    }
 }
+
+//private void cmbEstAlumno_SelectedIndexChanged(object sender, EventArgs e)
+//{
+//	cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
+//}
+
+//private void buttCancelar_Click(object sender, EventArgs e)
+//{
+//	using (Principal principalForm = new Principal())
+//	{
+//		this.Hide();
+//		principalForm.ShowDialog();
+//	}
+//}

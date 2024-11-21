@@ -35,8 +35,8 @@ namespace EspacioCorner.Front
                 }).ToList();
 
                 dgvAlumFutbol.DataSource = alumnosConEdad;
-                dgvAlumFutbol.Columns["Id_Alumno"].Visible = false; // Ocultar la columna Id_Alumno
-                dgvAlumFutbol.Columns["Edad"].HeaderText = "Edad"; // Mostrar la columna Edad
+                dgvAlumFutbol.Columns["Id_Alumno"].Visible = false; 
+                dgvAlumFutbol.Columns["Edad"].HeaderText = "Edad"; 
             }
             catch (Exception ex)
             {
