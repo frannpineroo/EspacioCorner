@@ -109,18 +109,17 @@ namespace EspacioCornet.Front
             this.Close();
         }
     }
-		private void cmbEstAlumno_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
-		}
+		//private void cmbEstAlumno_SelectedIndexChanged(object sender, EventArgs e)
+		//{
+		//	cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
+		//}
 
-		private void buttCancelar_Click(object sender, EventArgs e)
-		{
-			using (Principal principalForm = new Principal())
-			{
-				this.Hide();
-				principalForm.ShowDialog();
-			}
-		}
-	}
+		//private void buttCancelar_Click(object sender, EventArgs e)
+		//{
+		//	using (Principal principalForm = new Principal())
+		//	{
+		//		this.Hide();
+		//		principalForm.ShowDialog();
+		//	}
+		//}
 }
