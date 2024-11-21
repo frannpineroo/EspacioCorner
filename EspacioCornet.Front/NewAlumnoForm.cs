@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Windows.Forms;
 using EspacioCorner.Entidades;
+using EspacioCorner.Front;
 using EspacioCorner.Negocios;
 
 namespace EspacioCornet.Front
@@ -38,6 +39,7 @@ namespace EspacioCornet.Front
 
 		private void buttAniadirAlum_Click(object sender, EventArgs e)
 		{
+			Principal principalForm = new Principal();
 			// Validar entrada
 			if (string.IsNullOrWhiteSpace(txtNombreAl.Text))
 			{
@@ -92,7 +94,9 @@ namespace EspacioCornet.Front
 				}
 
 				MessageBox.Show("Alumno agregado exitosamente.");
-				this.Close();
+				this.Hide();
+				principalForm.ShowDialog();
+
 			}
 		}
 		private void clbDeportes_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,6 +112,15 @@ namespace EspacioCornet.Front
 		private void cmbEstAlumno_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			cmbEstAlumno.DataSource = Enum.GetValues(typeof(EstadoAlumno));
+		}
+
+		private void buttCancelar_Click(object sender, EventArgs e)
+		{
+			using (Principal principalForm = new Principal())
+			{
+				this.Hide();
+				principalForm.ShowDialog();
+			}
 		}
 	}
 }

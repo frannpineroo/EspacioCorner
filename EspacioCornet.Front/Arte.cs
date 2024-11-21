@@ -26,5 +26,10 @@ namespace EspacioCorner.Front
 			}
 			
 		}
+
+		private void dgvAlumArte_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
 	}
 }

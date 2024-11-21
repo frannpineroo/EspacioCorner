@@ -47,6 +47,7 @@
 			this.lblEstAlumno = new System.Windows.Forms.Label();
 			this.clbDeportes = new System.Windows.Forms.CheckedListBox();
 			this.cboxFichaMed = new System.Windows.Forms.CheckBox();
+			this.buttCancelar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// buttAniadirAlum
@@ -236,11 +237,23 @@
 			this.cboxFichaMed.Text = "Marcar si";
 			this.cboxFichaMed.UseVisualStyleBackColor = true;
 			// 
+			// buttCancelar
+			// 
+			this.buttCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.buttCancelar.Location = new System.Drawing.Point(621, 57);
+			this.buttCancelar.Name = "buttCancelar";
+			this.buttCancelar.Size = new System.Drawing.Size(108, 32);
+			this.buttCancelar.TabIndex = 22;
+			this.buttCancelar.Text = "Cancelar";
+			this.buttCancelar.UseVisualStyleBackColor = true;
+			this.buttCancelar.Click += new System.EventHandler(this.buttCancelar_Click);
+			// 
 			// NewAlumnoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.buttCancelar);
 			this.Controls.Add(this.cboxFichaMed);
 			this.Controls.Add(this.clbDeportes);
 			this.Controls.Add(this.lblEstAlumno);
@@ -289,5 +302,6 @@
 		private System.Windows.Forms.Label lblEstAlumno;
 		private System.Windows.Forms.CheckedListBox clbDeportes;
 		private System.Windows.Forms.CheckBox cboxFichaMed;
+		private System.Windows.Forms.Button buttCancelar;
 	}
 }
