@@ -42,29 +42,32 @@
 			// 
 			this.tabControl1.Controls.Add(this.tabPage1);
 			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Location = new System.Drawing.Point(13, 13);
+			this.tabControl1.Location = new System.Drawing.Point(17, 16);
+			this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(775, 425);
+			this.tabControl1.Size = new System.Drawing.Size(1033, 523);
 			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
 			// 
 			this.tabPage1.Controls.Add(this.buttBasToPrin);
 			this.tabPage1.Controls.Add(this.dgvAlumBasquet);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
+			this.tabPage1.Location = new System.Drawing.Point(4, 25);
+			this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(767, 399);
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabPage1.Size = new System.Drawing.Size(1025, 494);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
 			// buttBasToPrin
 			// 
-			this.buttBasToPrin.Location = new System.Drawing.Point(670, 16);
+			this.buttBasToPrin.Location = new System.Drawing.Point(893, 20);
+			this.buttBasToPrin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.buttBasToPrin.Name = "buttBasToPrin";
-			this.buttBasToPrin.Size = new System.Drawing.Size(75, 23);
+			this.buttBasToPrin.Size = new System.Drawing.Size(100, 28);
 			this.buttBasToPrin.TabIndex = 1;
 			this.buttBasToPrin.Text = "Volver";
 			this.buttBasToPrin.UseVisualStyleBackColor = true;
@@ -73,27 +76,31 @@
 			// dgvAlumBasquet
 			// 
 			this.dgvAlumBasquet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvAlumBasquet.Location = new System.Drawing.Point(20, 16);
+			this.dgvAlumBasquet.Location = new System.Drawing.Point(27, 20);
+			this.dgvAlumBasquet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.dgvAlumBasquet.Name = "dgvAlumBasquet";
-			this.dgvAlumBasquet.Size = new System.Drawing.Size(539, 299);
+			this.dgvAlumBasquet.Size = new System.Drawing.Size(719, 368);
 			this.dgvAlumBasquet.TabIndex = 0;
 			// 
 			// tabPage2
 			// 
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
+			this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(767, 399);
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabPage2.Size = new System.Drawing.Size(1025, 497);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// Basquet
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1067, 554);
 			this.Controls.Add(this.tabControl1);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "Basquet";
 			this.Text = "Basquet";
 			this.Load += new System.EventHandler(this.Basquet_Load);

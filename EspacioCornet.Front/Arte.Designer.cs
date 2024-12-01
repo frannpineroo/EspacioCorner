@@ -42,20 +42,22 @@
 			// 
 			this.tabControl1.Controls.Add(this.tabPage1);
 			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Location = new System.Drawing.Point(13, 13);
+			this.tabControl1.Location = new System.Drawing.Point(17, 16);
+			this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(775, 425);
+			this.tabControl1.Size = new System.Drawing.Size(1033, 523);
 			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
 			// 
 			this.tabPage1.Controls.Add(this.dgvAlumArte);
 			this.tabPage1.Controls.Add(this.buttArtToPrin);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
+			this.tabPage1.Location = new System.Drawing.Point(4, 25);
+			this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(767, 399);
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabPage1.Size = new System.Drawing.Size(1025, 494);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
@@ -63,16 +65,18 @@
 			// dgvAlumArte
 			// 
 			this.dgvAlumArte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvAlumArte.Location = new System.Drawing.Point(16, 24);
+			this.dgvAlumArte.Location = new System.Drawing.Point(21, 30);
+			this.dgvAlumArte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.dgvAlumArte.Name = "dgvAlumArte";
-			this.dgvAlumArte.Size = new System.Drawing.Size(566, 325);
+			this.dgvAlumArte.Size = new System.Drawing.Size(755, 400);
 			this.dgvAlumArte.TabIndex = 1;
 			// 
 			// buttArtToPrin
 			// 
-			this.buttArtToPrin.Location = new System.Drawing.Point(665, 24);
+			this.buttArtToPrin.Location = new System.Drawing.Point(887, 30);
+			this.buttArtToPrin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.buttArtToPrin.Name = "buttArtToPrin";
-			this.buttArtToPrin.Size = new System.Drawing.Size(75, 23);
+			this.buttArtToPrin.Size = new System.Drawing.Size(100, 28);
 			this.buttArtToPrin.TabIndex = 0;
 			this.buttArtToPrin.Text = "Volver";
 			this.buttArtToPrin.UseVisualStyleBackColor = true;
@@ -81,19 +85,22 @@
 			// tabPage2
 			// 
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
+			this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(767, 399);
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabPage2.Size = new System.Drawing.Size(1025, 497);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// Arte
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1067, 554);
 			this.Controls.Add(this.tabControl1);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "Arte";
 			this.Text = "Arte";
 			this.Load += new System.EventHandler(this.Arte_Load);
